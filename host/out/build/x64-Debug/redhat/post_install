@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Copyright 2011,2013 Ettus Research LLC
+# Copyright 2018 Ettus Research, a National Instruments Company
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+
+cp E:/UHD/UHD-4.0.0.0(B210适配)/host/out/install/x64-Debug/lib64/uhd/utils/uhd-usrp.rules /etc/udev/rules.d/uhd-usrp.rules
+udevadm control --reload-rules
+udevadm trigger
+ldconfig
